@@ -55,6 +55,13 @@ docs/<対象>        # ドキュメント
 
 ---
 
+## デプロイ情報
+
+- 本番URL：https://realestate-hv4a2u3d5-taijyu-kadota-s-projects.vercel.app/
+- Supabaseプロジェクト名：realestate-app
+
+---
+
 ## ローカル環境のセットアップ
 
 （セットアップ手順はプロジェクト初期化後にここへ追記する）
