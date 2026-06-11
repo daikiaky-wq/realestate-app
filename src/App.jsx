@@ -1,0 +1,29 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Properties from './pages/Properties'
+import PrivateRoute from './components/PrivateRoute'
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* デフォルトはログイン画面へリダイレクト */}
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        {/* 認証必須ページ：未ログインの場合は /login へリダイレクト */}
+        <Route
+          path="/properties"
+          element={
+            <PrivateRoute>
+              <Properties />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App

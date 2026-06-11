@@ -1,0 +1,26 @@
+# 依存関係
+node_modules/
+
+# ビルド成果物
+dist/
+dist-ssr/
+
+# 環境変数（Supabase キーなど機密情報を含むため除外）
+.env
+.env.local
+.env.*.local
+
+# Vite キャッシュ
+.vite/
+
+# エディタ設定
+.vscode/
+.idea/
+
+# OS 生成ファイル
+.DS_Store
+Thumbs.db
+
+# ログ
+*.log
+npm-debug.log*
